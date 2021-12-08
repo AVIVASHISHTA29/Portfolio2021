@@ -1,0 +1,609 @@
+:root {
+  --textcolor:#000;
+  --blue: #006AFF;
+  --backgroundColor:#fff;
+}
+
+
+@font-face 
+{
+  font-family: "EBGaramondBold";
+  src: local('EBGaramondBold'), url(./GTWalsheimPro-Bold/GTWalsheimPro-Bold.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face 
+{
+  font-family: "EBGaramondRegular";
+  src: local('EBGaramondBold'), url(./GTWalsheimPro-Bold/GTWalsheimPro-Regular.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: EBGaramondRegular;
+  /* cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39,
+    auto; */
+    background-color: var(--backgroundColor) !important;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "EBGaramondBold";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.para{
+  text-align:center;
+  color:var(--textcolor);
+  opacity:0.5;
+}
+
+.headernav{
+  margin-right:10px;
+  padding:10px;
+  color:grey;
+  font-weight: bolder;
+  font-family: "EBGaramondRegular";
+  cursor: pointer;
+}
+.headernav:hover
+{
+  background-color:#f2f2f2;
+  color:#000 !important;
+  border-radius:10px;
+  border:0px solid #fff;
+  transition:0.25s;
+  
+}
+
+.draggable-main {
+  z-index:1;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+  font-family: "EBGaramondBold" !important;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+}
+
+.content {
+  cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39,
+  auto;
+  position: relative;
+  font-family: "EBGaramondBold" !important;
+  width: 420px;
+  height: 240px;
+  font-size:18px;
+}
+
+.content > div {
+  position: absolute;
+  width: 450px;
+  height: 90px;
+  overflow: visible;
+  font-family: "EBGaramondBold" !important;
+  pointer-events: auto;
+  transform-origin: 50% 50% 0px;
+  border-radius: 8px;
+  color: white;
+  line-height: 90px;
+  padding-left: 32px;
+  background: lightblue;
+  /* text-transform: uppercase; */
+}
+
+.content > div:nth-child(1) {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+.content > div:nth-child(3) {
+  background: linear-gradient(135deg, #3beb7b 0%, #3fa1fc 100%);
+}
+.content > div:nth-child(4) {
+  background: linear-gradient(135deg, #5ee7df 0%, #7e38e0 100%);
+}
+.content > div:nth-child(5) {
+  background: linear-gradient(135deg, #fda085 0%, #f6d365 100%);
+}
+.content > div:nth-child(2) {
+  background: linear-gradient(135deg, #f5576c 0%, #eebd89 100%);
+}
+
+.container{
+  width: 70%;
+  margin-top: 10%;
+  max-width:1300px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.backgroundDiv{
+  height:100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-image: url('./assets/img/background.png'); */
+}
+.IntroComponent{
+  margin-top: 10%;
+  
+  display: flex;
+  
+
+}
+.headingIntro{
+  font-size: 150%;
+  animation: fadein 2s,heading 2s;
+}
+
+.subHeadingIntroComponent {
+  animation: subHeading 2s;
+  color:#000;
+  opacity:0.5;
+  cursor: pointer;
+}
+
+.subHeadingIntroComponent:hover {
+  color:#000;
+  transform: scale(1.2);
+  opacity:0.8;
+  cursor: pointer;
+  transition:1.3s;
+}
+
+.cartoonText{
+  font-family: 'Nanum Pen Script', cursive;
+  color:var(--blue);
+  /* transform: rotate(-15deg); */
+}
+.iphoneImg{
+  position: relative;
+  top: 50px;
+  left: 80%;
+  z-index: 1;
+  /* transform: rotate(1deg); */
+  transition: transform 1.2s ease-in-out;
+
+}
+
+.iphoneImg:hover{
+ transform:rotate(2deg) scale(1.015);
+
+}
+.imageIntro{
+  position:relative;
+  top: 0;
+  left: 0;
+  animation: fadein 2s , subHeading 2s;
+  cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39,
+    auto;
+}
+
+.instaLoop{
+  cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39,
+  auto;
+  transition: transform 1.2s ease-in-out;
+  transform: rotate(3deg);
+}
+.instaLoop:hover{
+  transform:rotate(2deg) scale(1.025);
+ 
+ }
+.macLw{
+position:absolute !important;
+top:0px;
+left:20%;
+border-radius:5px;
+transition: transform 1.2s ease-in-out;
+margin-top:30px;
+box-shadow: 2px 2px 10px rgb(92, 92, 92);
+
+}
+
+.macLw:hover{
+  transform: rotate(-1deg) scale(1.015);
+ }
+svg{
+    overflow: visible;
+    height: 1.76em;
+}
+
+
+/* media query for specialtext */
+
+@keyframes fadein {
+  from { opacity: 0.7; }
+  to   { opacity: 1; }
+}
+
+@keyframes heading {
+  0% {
+      position: relative;
+      left:-10px;
+      transform: scaleY(0.9) scaleX(0.9);
+      -webkit-transform: scaleY(0.9) scaleX(0.9);
+  }
+  100% {
+      top:0px;
+      position: relative;
+      left: 0%;
+      transform: scaleY(1.0) scaleX(1.0);
+      -webkit-transform: scaleY(1.0) scaleX(1.0);
+  }
+}
+
+@keyframes subHeading {
+  0% {
+      transform: scaleY(0.9) scaleX(0.9);
+      -webkit-transform: scaleY(0.9) scaleX(0.9);
+  }
+  100% {
+
+      transform: scaleY(1.0) scaleX(1.0);
+      -webkit-transform: scaleY(1.0) scaleX(1.0);
+  }
+}
+
+.aboutMe{
+  text-align: center;
+  width:100%;
+  padding:20px;
+}
+
+.skillSet{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skillSetWritten{
+  width:70%;
+  border:1px solid lightgrey;
+  border-radius:5px;
+  padding:20px;
+
+}
+
+.notes
+{
+  border:1.5px solid lightgrey;
+  border-radius:7px;
+  margin:20px;
+  box-shadow: 2px 2px 5px lightgrey;
+  margin-right:auto ;
+  display:block;
+  transition: transform 1.2s ease-in-out;
+
+}
+
+.notes:hover{
+  transform: rotate(-1deg) scale(1.005);
+}
+
+.textBubble{
+  width:300px;
+  margin-right: auto;
+  position: absolute;
+  left: 10%;
+  animation: hideAnimation 0s ease-in 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+.hiddenText{
+  visibility:hidden;
+  animation: showAnimation 0s ease-in 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showAnimation {
+  to {
+    visibility: visible;
+  }
+}
+
+.btn{
+  padding:10px;
+  background-color: var(--blue);
+  color:#fff;
+  border-radius:40px;
+  border:1px solid var(--blue);
+  box-shadow: 0 3px 5px var(--blue);
+  width:160px;
+  height:45px;
+  font-size: 101%;
+  font-family: "EBGaramondRegular";
+  margin:20px;
+  margin-left:0px;
+  transition: transform 0.5s ease-in-out;
+  cursor:pointer;
+}
+
+.btn:hover{
+  transform: scale(1.035);
+  background-color: #fff;
+  color:#333;
+  border:1px solid #fff;
+  box-shadow: 0 3px 10px lightblue;
+  transition:0.5s;
+}
+
+.btn2{
+  padding:10px;
+  background-color: #fff;
+  color:#333;
+  border-radius:40px;
+  border:1px solid #fff;
+  box-shadow: 0 3px 10px lightblue;
+  width:160px;
+  font-family: "EBGaramondRegular";
+  font-size: 101%;
+  margin:20px;
+  margin-left:0px;
+  height:45px;
+  cursor:pointer;
+}
+
+.btn2:hover
+{
+  transform: scale(1.035);
+  background-color: var(--blue);
+  color:#fff;
+  border-radius:40px;
+  border:1px solid var(--blue);
+  box-shadow: 0 3px 5px var(--blue);
+  transition:0.5s;
+
+}
+
+.dp{
+  border-radius: 100%;
+  object-fit: cover;
+  width:100px;
+  height:100px;
+}
+.dp2{
+  border-radius: 10px;
+  object-fit: cover;
+  width:200px;
+  height:200px;
+}
+
+.idCard{
+  transition:0.5s;
+  box-shadow: 2px 2px 5px lightgrey;
+}
+
+.idCard:hover{
+  transform: rotate(-1deg) scale(1.015);
+}
+
+/* #root {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39,
+    auto;
+}
+
+#root > div {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  will-change: transform;
+}
+
+#root > div > div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  box-shadow: 0 62.5px 125px -25px rgba(50, 50, 73, 0.5), 0 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
+} */
+
+
+@media only screen and (max-width: 1320px) {
+  .container{
+    
+    width:90% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .IntroComponent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    padding:0px !important;
+  }
+
+  .textBubble{
+    position: relative;
+    left:0%;
+    margin:0;
+    padding:0;
+    margin-left: auto;
+    margin-right:auto;
+    display: block;
+  }
+  .IntroComponentWrapper{
+    width:100% !important;
+    padding:20px;
+  }
+
+  .idCard{
+    /* min-width:350px; */
+    max-width: 400px;
+    margin-right: auto!important;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .container{
+    margin-top:70px!important;
+  }
+  .IntroComponent{
+    margin-bottom:0px;
+  }
+
+  .idText{
+    padding:0px !important;
+    padding-left:20px !important;
+  }
+
+  .cartoonTextIntro{
+    left:0% !important;
+    position: relative;
+    margin-top:100px !important;
+    text-align: center !important ;
+    display: block;
+  }
+  .idCard{
+    /* min-width:350px; */
+    max-width: 400px;
+    margin-right: auto!important;
+    margin-left: auto!important;
+    font-size: 70% !important;
+  }
+
+  .idCard2{
+    width:100% !important;
+    font-size:90% !important;
+  }
+
+  #about{
+    flex-direction: column !important;
+    width:100%;
+    justify-content: center;
+  }
+
+  .instaLoop{
+    min-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+  .para{
+    width:90% !important;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+  }
+
+  /* .cartoonText{
+    display:none;
+  } */
+
+  .dp2{
+    width:35% !important;
+    height:35% !important;
+  }
+
+  .instaTag{
+    font-size:60% !important;
+  }
+  .skillSet{
+    padding:20px;
+    flex-direction: column-reverse;
+  }
+
+  .draggableItems{
+    width:100% !important;
+    margin-left: auto;
+    margin-right:auto;
+    display: block;
+    max-width: 400px;
+  }
+  .notesDiv{
+    width:100% !important;
+    margin-top: 0px !important;
+  }
+
+  .content > div{
+    width: 100% !important;
+    font-size: 80% !important;
+  }
+
+  #socials{
+    flex-direction: column;
+    padding-left: 0px !important;
+  }
+
+  #socials h1{
+    margin-bottom:0px;
+  }
+
+  .cartoonText2{
+    margin:0px;
+  }
+
+  .lastText{
+    margin-right: auto;
+  }
+
+  .socialLinks{
+    margin-top:20px;
+    justify-content:center !important;
+    align-items:center !important;
+    margin-left: auto;
+    margin-right:auto !important;
+  }
+
+  .imageIntro{
+    width:90% !important;
+    
+  }
+
+  .macLw{
+    left:0px !important;
+  }
+
+  .iphoneImg{
+    left:60% !important;
+    top:80px;
+  }
+  .notes{
+    margin:0px !important;
+  }
+  .SkillSetItems{
+    width:100% !important;
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import DraggableList from './Viewpager'
-import notes from '../assets/img/notes.png'
+
 function SkillSet() {
     const arraySkills = [['Front End','React/NextJs, Bootstrap'],
                         ['Back End','Django, PHP, Firebase'],
@@ -17,7 +17,7 @@ function SkillSet() {
                 </div>
             </div>
                 <div className="notesDiv" style={{width:"50%",marginTop:100}}>
-                <img className="notes" src={notes} alt="Notes" width="100%"/>
+                <img className="notes" src="https://i.ibb.co/ss4BBF1/notes.png" alt="Notes" width="100%"/>
                 <p className="cartoonText" style={{fontSize:"150%",color:"orange",textAlign:"center"}}>PS. My Skill set is Literally Variable, Try Dragging and Rearranging one of the Skills :p</p>
                 </div>
         </div>

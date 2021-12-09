@@ -8,7 +8,7 @@ import { Avatar, Link } from "@material-ui/core";
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import React from 'react'
-import myImage from '../assets/img/avi.JPG'
+
 
 function MyList() {
 
@@ -17,7 +17,7 @@ function MyList() {
         // user?(
             <List>
             <Avatar 
-                src={myImage}
+                src="https://i.ibb.co/Bswp8RS/avi.jpg"
                 style={{height:100 , width:100 , marginRight:"auto" , marginLeft:"auto" , marginBottom:"10px",marginTop:"30px"}}
                 />
               <a href="/#about" className="headernav" style={{color:"#000", opacity:0.5 , display:"flex" , alignItems:"center" }}>

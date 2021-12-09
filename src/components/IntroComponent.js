@@ -1,13 +1,8 @@
 import React from 'react';
 import iphoneImg from '../assets/img/iphoneAnonimo.png';
 import macLw from '../assets/img/macLw.png';
-import playStore from '../assets/img/playStore.png';
-import flutterLogo from '../assets/img/flutterLogo.jpg';
-import instagram from '../assets/img/instagram.png';
-import avi from '../assets/img/avi.JPG';
-import gameIphone from '../assets/img/gameIphone.png';
 import textBubble from '../assets/img/textbubble.gif';
-import DraggableList from './Viewpager';
+
 function IntroComponent() {
     const [showResults, setShowResults] = React.useState(true)
     const onClick = () => setShowResults(false)
@@ -42,7 +37,7 @@ function IntroComponent() {
                             <h1 style={{marginTop:10}}><strong style={{color:"#27C841"}}> .</strong></h1>
                         </div>
                         <div style={{display:"flex", alignItems: 'center',padding:20}}>
-                            <img src={avi} className="dp"/>
+                            <img src="https://i.ibb.co/Bswp8RS/avi.jpg" className="dp"/>
                             <div className="idText" style={{padding:20 , fontSize:"80%"}}>
                                 <h1>Avi Vashishta</h1>
                                 <h3 style={{fontFamily:"EBGaramondRegular",opacity:0.3,marginTop:-10}}>CS Student @ IIITD</h3>

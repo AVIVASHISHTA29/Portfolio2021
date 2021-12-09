@@ -1,6 +1,5 @@
 import React from 'react'
 import instaLoop from '../assets/img/instaLoop.gif'
-import instaQR from '../assets/img/instaQR.jpg'
 function AboutMe() {
     const [showInsta, setShowInsta] = React.useState(true)
     const onClick2 = () => setShowInsta(false)
@@ -29,7 +28,7 @@ function AboutMe() {
                         </div>
                         <a href="https://instagram.com/avi_vashishta29">
                         <div style={{display:"flex", alignItems: 'center',padding:20}}>
-                            <img src={instaQR} className="dp2"/>
+                            <img src="https://i.ibb.co/CV5N0jW/instaQR.jpg" className="dp2"/>
                             <div className="instaTag" style={{padding:20 , fontSize:"80%"}}>
                                 <h1>@avi_vashishta29</h1>
                                 <h3 style={{fontFamily:"EBGaramondRegular",opacity:0.3,marginTop:-10}}>Scan my instagram QR Code!</h3>

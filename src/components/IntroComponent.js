@@ -25,8 +25,24 @@ function IntroComponent() {
                     <div className="hiddenText">
                         <p  style={{color:"#000",opacity:0.5 }}>Hey There! I am Avi Vashishta - A Self Taught Web Developer. Welcome to my Professional Portfolio.</p>
                         <div style={{display:"flex"}}>
-                            <a href="https://instagram.com/avi_vashishta29"><button className="btn">Connect Now</button></a>
-                            <a href="#projects"><button className="btn2">My Projects</button></a>
+                            <a href="/" onClick={(e) => {
+                const menu = document.getElementById('socials');
+                e.preventDefault();
+                menu &&
+                 menu.scrollIntoView({behavior: 'smooth', block: 'start'});
+                // if (window.location.href!='http://localhost:3000/') {
+                //   location.href = '/#about';
+                // }
+              }}><button className="btn">Connect Now</button></a>
+                            <a href="/" onClick={(e) => {
+                const menu = document.getElementById('projects');
+                e.preventDefault();
+                menu &&
+                 menu.scrollIntoView({behavior: 'smooth', block: 'start'});
+                // if (window.location.href!='http://localhost:3000/') {
+                //   location.href = '/#about';
+                // }
+              }}><button className="btn2">My Projects</button></a>
                         </div>
                      </div>
                      { showResults ?

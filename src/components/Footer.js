@@ -20,10 +20,10 @@ function Footer() {
             </p>
         </div>
         <div className="socialLinks" style={{display:"flex",alignItems:"center",justifyContent:"end",marginLeft:'auto',paddingBottom:30}}>
-            <a className="headernav" style={{marginTop:-20}}> <FontAwesomeIcon icon={faInstagram} size="2x"/></a>
-            <a className="headernav" style={{marginTop:-20}}> <FontAwesomeIcon icon={faLinkedin} size="2x"/></a>
-            <a className="headernav" style={{marginTop:-20}}> <FontAwesomeIcon icon={faFacebook} size="2x"/></a>
-            <a className="headernav" style={{marginTop:-20}}> <FontAwesomeIcon icon={faGoogle} size="2x"/></a>
+            <a className="headernav" href="https://instagram.com/avi_vashishta29" style={{marginTop:-20}}> <FontAwesomeIcon icon={faInstagram} size="2x"/></a>
+            <a className="headernav" href="https://www.linkedin.com/in/avi-vashishta-28b3308a/"  style={{marginTop:-20}}> <FontAwesomeIcon icon={faLinkedin} size="2x"/></a>
+            <a className="headernav" href="https://www.facebook.com/avi.vashishta.5/"  style={{marginTop:-20}}> <FontAwesomeIcon icon={faFacebook} size="2x"/></a>
+            <a className="headernav" href="mailto: avivashishta@gmail.com" style={{marginTop:-20}}> <FontAwesomeIcon icon={faGoogle} size="2x"/></a>
         </div>
         <span style={{display:"none",fontSize:"150%"}} className="specialtext2">< span style={{textAlign:"left",color:"red"}} className="cartoonText">Until Next Time :p</span></span>
 

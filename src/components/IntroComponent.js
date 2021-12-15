@@ -11,7 +11,8 @@ function IntroComponent() {
         
         <div className="IntroComponent">
             <div className="IntroComponentWrapper" style={{padding:20 , width:"50%"}}>
-                <div style={{fontSize:"150%"}}><h1 className="headingIntro">Web Developer <strong style={{color:"var(--blue)"}}>.</strong></h1></div>
+                <div style={{fontSize:"150%"}}>
+                    <h1 className="headingIntro"><span></span><strong style={{color:"var(--blue)"}}> .</strong></h1></div>
                     <img src={textBubble} className="textBubble"/>
                     {/* {imageIntro2 ? <h1 onClick={onClickImageIntro2} className="headingIntro">App & Game Dev</h1> : <h3 onClick={onClickImageIntro2} className="subHeadingIntroComponent">App & Game Dev</h3> }
                     {imageIntro3 ? <h1 onClick={onClickImageIntro3} className="headingIntro">Investing</h1> : <h3 onClick={onClickImageIntro3} className="subHeadingIntroComponent">Investing</h3> }

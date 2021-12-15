@@ -157,6 +157,37 @@ a {
   animation: fadein 2s,heading 2s;
 }
 
+.headingIntro span::before {
+  content: "Web Developer";
+  animation: animate infinite 7s;
+  padding-left: 10px;
+}
+
+@keyframes animate {
+
+  0% {
+      content: "Game Developer";
+  }
+
+  25% {
+    content: "Author";
+  }
+
+  50% {
+      content: "Investor";
+  }
+
+  75% {
+
+      content: "App Developer";
+  }
+  100% {
+
+    content: "Student";
+}
+}
+
+
 .subHeadingIntroComponent {
   animation: subHeading 2s;
   color:#000;

@@ -14,7 +14,7 @@ function Projects() {
     {
       imgSrc:
         "https://i.ibb.co/2WNgr8q/Screenshot-2022-01-03-at-9-31-15-PM.png",
-      src: "www.wexus.in/",
+      src: "https://www.wexus.in/",
       description:
         "The new website for Simply Sites. A Freelancing service started by me and Jayesh Sadhwani where we provide 3 tiers of services to build responsive and clean webapps with full fledged backend support.",
       github: false,

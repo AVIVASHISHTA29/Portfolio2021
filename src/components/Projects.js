@@ -19,6 +19,13 @@ function Projects() {
         "The new website for Simply Sites. A Freelancing service started by me and Jayesh Sadhwani where we provide 3 tiers of services to build responsive and clean webapps with full fledged backend support.",
       github: false,
     },
+    {
+      imgSrc:
+        "https://i.ibb.co/BwPrB9k/Screenshot-2022-01-08-at-1-20-52-AM.png",
+      src: "https://www.drishtimakhijani.com/",
+      description: "Portfolio made for @Drishti Makhijani , 2022",
+      github: false,
+    },
 
     {
       imgSrc:

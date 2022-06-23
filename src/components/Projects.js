@@ -5,6 +5,18 @@ import DialogProjects from "./DialogProjects";
 function Projects() {
   const projectList = [
     {
+      imgSrc: "https://i.ibb.co/PFk48t7/Bold.png",
+      src: "https://boldstore.in/",
+      description: "The World's First One Click marketplace",
+      github: false,
+    },
+    {
+      imgSrc: "https://i.ibb.co/yN1r3Mn/sahayak.png",
+      src: "https://sahaayak.vercel.app/",
+      description: "A 2022 Web App for all of your Bioinformatics needs.",
+      github: false,
+    },
+    {
       imgSrc:
         "https://i.ibb.co/7QFwLD6/Screenshot-2021-12-09-at-2-27-09-PM.png",
       src: "https://pizzacassino-pixysquare.vercel.app/",

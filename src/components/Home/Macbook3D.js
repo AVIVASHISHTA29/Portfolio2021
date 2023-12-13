@@ -1,8 +1,9 @@
-import { Center, Environment, OrbitControls, useGLTF } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import React from "react";
+import { Center, Environment, useGLTF } from "@react-three/drei";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { easing } from "maath";
+import React, { useRef } from "react";
 
-export const Macbook3D = ({ position = [-1.85, 0.75, 2], fov = 22 }) => (
+export const Macbook3D = ({ position = [0, 0, 2.5], fov = 25 }) => (
     <Canvas
         shadows
         gl={{ preserveDrawingBuffer: true }}
@@ -11,10 +12,12 @@ export const Macbook3D = ({ position = [-1.85, 0.75, 2], fov = 22 }) => (
         eventPrefix="client">
         <ambientLight intensity={1} />
         <Environment files="https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/potsdamer_platz_1k.hdr" />
-        <Center>
-            <Macbook3DModel />
-        </Center>
-        <OrbitControls enableZoom={false} />
+        <CameraRig>
+            <Center>
+                <Macbook3DModel />
+            </Center>
+        </CameraRig>
+        {/* <OrbitControls enableZoom={false} /> */}
     </Canvas>
 )
 
@@ -24,7 +27,11 @@ function Macbook3DModel(props) {
         "/assets/3d/macBook.glb"
     );
     return (
-        <group {...props} dispose={null}>
+        <group {...props} dispose={null}
+            position={[0, 0, 0]}
+            rotation={[0.15, 1, 0.2]}
+            scale={0.75}
+        >
             <group scale={0.0175}>
                 <mesh
                     castShadow
@@ -323,6 +330,26 @@ function Macbook3DModel(props) {
             </group>
         </group>
     );
+}
+
+function CameraRig({ children }) {
+    const group = useRef()
+
+    useFrame((state, delta) => {
+        easing.damp3(
+            state.camera.position,
+            [0, 0, 2],
+            0.25,
+            delta
+        )
+        easing.dampE(
+            group.current.rotation,
+            [state.pointer.y / 10, -state.pointer.x / 5, 0],
+            0.25,
+            delta
+        )
+    })
+    return <group ref={group}>{children}</group>
 }
 
 useGLTF.preload("/assets/3d/macBook.glb");

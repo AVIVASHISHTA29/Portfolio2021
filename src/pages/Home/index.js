@@ -1,6 +1,8 @@
 import React from 'react';
 import { FiInstagram } from "react-icons/fi";
+import aboutImage from '../../assets/images/about.jpg';
 import { Macbook3D } from '../../components/Home/Macbook3D';
+import { IPhone } from '../../components/Home/iPhone';
 import styles from "./styles.module.css";
 
 function Home() {
@@ -33,8 +35,20 @@ function Home() {
 
                 </div>
             </div>
-            <div className={styles.lowerDiv}></div>
-        </div>
+            <div className={styles.lowerDiv}>
+                <div className={styles.aboutMe} style={{ backgroundImage: `url(${aboutImage})` }}>
+                    <h1 className={styles.smallheading}>ABOUT<br /> ME</h1>
+                </div>
+                <div className={styles.games}>
+                    <div className={styles.iphoneModel}><IPhone /></div>
+                    <h1 className={styles.smallGamesheading} >GAMES & <br />MOBILE APPS</h1>
+                </div>
+                <div className={styles.onlineSessions}>
+                    <h1 className={styles.smallheading}>ONLINE SESSIONS</h1>
+                    <h1 className={styles.smallheadingStroke}>50K+ VIEWS</h1>
+                </div>
+            </div>
+        </div >
     )
 }
 

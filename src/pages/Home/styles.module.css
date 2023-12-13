@@ -55,6 +55,7 @@
   align-items: center;
   color: #000;
   font-size: 24px;
+  cursor: pointer;
 }
 
 .webProjects {
@@ -62,13 +63,24 @@
   border: 1px solid #fff;
   border-radius: 10px;
   padding: 1.5rem;
+  /* position: relative; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   position: relative;
 }
 
+.iphoneModel {
+  width: 50%;
+  height: 100%;
+  z-index: 100;
+  top: 180px;
+  left: -280px;
+}
+
 .model {
-  position: absolute;
   width: 100%;
-  height: 90vh;
+  height: 100%;
   z-index: 100;
   top: -80px;
   left: -50px;
@@ -80,4 +92,88 @@
   line-height: normal;
   margin: 0px;
   letter-spacing: 3px;
+  width: 100%;
+  position: absolute;
+}
+
+.lowerDiv {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.aboutMe {
+  cursor: pointer;
+  width: 25%;
+  border-radius: 10px;
+  padding: 1rem;
+  background-size: 250%;
+  background-position: top left;
+  filter: grayscale(100%);
+  transition: background-position 0.2s, filter 0.2s;
+}
+
+.aboutMe:hover {
+  background-position: bottom left;
+  filter: grayscale(0%);
+}
+
+.games {
+  width: 70%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.games:hover {
+  /* background-color: #fff;
+  color: #000 !important; */
+}
+
+.onlineSessions {
+  width: 35%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.smallheading {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: normal;
+  margin: 0px;
+  letter-spacing: 3px;
+}
+
+.smallGamesheading {
+  font-size: 56px;
+}
+
+.smallheadingSpan {
+  font-size: 46px;
+}
+
+.smallheadingStroke {
+  color: #000;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: normal;
+  -webkit-text-stroke: 2px #fff;
+  text-stroke: 2px #fff;
+  margin: 0px;
+  letter-spacing: 3px;
+  transition: all 1s;
+}
+
+.smallheadingStroke:hover {
+  color: #fff;
+  -webkit-text-stroke: 2px;
+  text-stroke: 2px;
 }

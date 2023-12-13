@@ -28,11 +28,11 @@ function Macbook3DModel(props) {
     );
     return (
         <group {...props} dispose={null}
-            position={[0, 0, 0]}
-            rotation={[0.15, 1, 0.2]}
-            scale={0.75}
+            position={[-0.15, 0, 0]}
+            rotation={[0.5, -0.75, 0]}
+            scale={0.95}
         >
-            <group scale={0.0175}>
+            <group scale={0.02}>
                 <mesh
                     castShadow
                     receiveShadow
@@ -344,7 +344,7 @@ function CameraRig({ children }) {
         )
         easing.dampE(
             group.current.rotation,
-            [state.pointer.y / 10, -state.pointer.x / 5, 0],
+            [state.pointer.y / 10, state.pointer.x / 5, 0],
             0.25,
             delta
         )

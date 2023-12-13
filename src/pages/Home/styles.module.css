@@ -1,3 +1,83 @@
 .main {
-  background-color: red;
+  margin: 0;
+  padding: 1rem;
+}
+
+.upperDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.text {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  color: #fff;
+  font-size: 86px;
+  font-weight: 900;
+  line-height: normal;
+  margin: 0px;
+  letter-spacing: 3px;
+}
+
+.strokeHeading {
+  font-size: 86px;
+  font-weight: 900;
+  line-height: normal;
+  color: #000;
+  -webkit-text-stroke: 2px #fff;
+  text-stroke: 2px #fff;
+  margin: 0px;
+  letter-spacing: 3px;
+}
+
+.circle {
+  height: 48px;
+  width: 48px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 24px;
+}
+
+.webProjects {
+  width: 55%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.model {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  z-index: 100;
+  top: -50px;
+  left: -50px;
+}
+
+.webHeading {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: normal;
+  margin: 0px;
+  letter-spacing: 3px;
 }
